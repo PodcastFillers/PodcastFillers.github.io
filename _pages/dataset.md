@@ -40,10 +40,9 @@ Pre-processed 1-second audio clips of the annotated events, where each clip is c
 
 The clips that have consolidated vocabulary labels (76,689) are split into “train”, “validation” and “test” partitions (folders), see Data Split for Machine Learning in [Annotations](/annotations/). The remainder of the clips (9,114) are placed in an “extra” folder. 
 
-Filename format: `{pfID}-{fullvoc label}.wav` where:
+Filename format: `{pfID}.wav` where:
 
 `{pfID}` = the PodcastFillers ID of the audio clip (see metadata below)\
-`{fullvoc label}` = full-vocabulary label (see [Annotations](/annotations/) for details)
 
 ## Metadata:
 #### 1. Speech-to-text podcasts transcripts
@@ -58,7 +57,7 @@ where “confidence” indicates the STT confidence in the prediction, “durati
 #### 2. PodcastFillers.csv
 This is the dataset’s main annotation file, and contains the annotations of all 85,803 manually annotated events. Each annotated event also corresponds to one pre-processed audio clip. For each annotated event / audio clip, we provide:
 
-- **clip_name** (str): The filename of the audio clip containing this event: `{pfID}_{fullvoc label}.wav`
+- **clip_name** (str): The filename of the audio clip containing this event: `{pfID}.wav`
 
 - **pfID** (str): The PodcastFillers 5-digit ID of the clip/event, a unique identifier.
 
