@@ -20,7 +20,11 @@ The PodcastFillers dataset consists of 199 full-length podcast episodes in Engli
 
 Please cite the following paper in work that makes use of this dataset:
 
-Ge Zhu, Juan-Pablo Caceres and Justin Salamon, “[Filler Word Detection and Classification: A Dataset and Benchmark](https://arxiv.org/abs/2203.15135)”, In 23rd Annual Cong. of the Int. Speech Communication Association (INTERSPEECH), Incheon, Korea, Sep. 2022.
+[Filler Word Detection and Classification: A Dataset and Benchmark](https://arxiv.org/abs/2203.15135)
+
+Ge Zhu, Juan-Pablo Caceres and Justin Salamon, 
+
+In 23rd Annual Cong. of the Int. Speech Communication Association (INTERSPEECH), Incheon, Korea, Sep. 2022.
 
 ### Bibtex
 ```
