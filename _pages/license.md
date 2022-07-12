@@ -6,7 +6,9 @@ description:
 nav: true
 nav_order: 4
 ---
-PodcastFillers Dataset Licenses include licenses for metadata and licenses for audio files. The metadata includes speech-to-text transcriptions, event clip annotations, VAD and classification predictions.
+The PodcastFillers dataset has separate licenses for the audio data and for the metadata. The metadata includes all annotations, speech-to-text transcriptions, and model outputs including VAD activations and FillerNet classification predictions.
+
+NOTE: PodcastFillers is provided for research purposes only. The metadata license prohibits commericial use, which in turn prohibits deploying technology developed using the PodcastFillers metadata (such as the CSV annotations or audio clips extracted based on these annotations) in commerical applications.
 
 ## License for PodcastFillers Dataset metadata
 

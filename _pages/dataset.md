@@ -42,7 +42,7 @@ The clips that have consolidated vocabulary labels (76,689) are split into “tr
 
 Filename format: `{pfID}.wav` where:
 
-`{pfID}` = the PodcastFillers ID of the audio clip (see metadata below)\
+`{pfID}` = the PodcastFillers ID of the audio clip (see metadata below)
 
 ## Metadata:
 #### 1. Speech-to-text podcasts transcripts
