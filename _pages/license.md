@@ -4,7 +4,7 @@ permalink: /license/
 title: License
 description:
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 The PodcastFillers dataset has separate licenses for the audio data and for the metadata. The metadata includes all annotations, speech-to-text transcriptions, and model outputs including VAD activations and FillerNet classification predictions.
 
