@@ -2,7 +2,7 @@
 layout: page
 permalink: /dataset/
 title: Dataset
-description: PodcastFillers dataset contain audio files and metadata.
+description: 
 nav: true
 nav_order: 2
 ---
@@ -61,7 +61,7 @@ The preprocessing utility functions and code repository for reproducing our expe
 
 ## Dataset
 
-Tree structure of the PodcastFillers dataset:
+PodcastFillers dataset contains audio files and metadata. Tree structure of the PodcastFillers dataset:
 
 ```
 .
@@ -80,15 +80,15 @@ Tree structure of the PodcastFillers dataset:
     └── episode_vad
 ```
 
-## Audio Files:
+### Audio Files:
 
-#### 1. Full-length podcast episodes (MP3)
+##### 1. Full-length podcast episodes (MP3)
 199 audio files of the full-length podcast episode recordings in mp3 format, stereo channels, 44.1 kHz sample rate and 32 bit depth. Filename format:  `{show name}_{episode name}.mp3`.
 
-#### 2. Pre-processed full-length podcast episodes (WAV)
+##### 2. Pre-processed full-length podcast episodes (WAV)
 199 audio files of the full-length podcast episode recordings in wav format, mono channel, 16 kHz sample rate and 32 bit depth. The files are split into train, validation and test partitions (folders), see Data Split for Machine Learning in [Annotations](/annotations/). Filename format:  `{show name}_{episode name}.wav`
 
-#### 3. Pre-processed WAV clips
+##### 3. Pre-processed WAV clips
 
 Pre-processed 1-second audio clips of the annotated events, where each clip is centered on the center of the event. For annotated events longer than 1 second, we truncate them from the center into 1-second. The clips are in the same format as the pre-processed full-length podcast episodes: wav format, mono channel, 16 kHz sample rate and 32 bit depth.
 
@@ -98,8 +98,8 @@ Filename format: `{pfID}.wav` where:
 
 `{pfID}` = the PodcastFillers ID of the audio clip (see metadata below)
 
-## Metadata:
-#### 1. Speech-to-text podcasts transcripts
+### Metadata:
+##### 1. Speech-to-text podcasts transcripts
 Speech transcript in JSON format for each podcast episode. Generated using the [SpeechMatics STT](https://www.speechmatics.com/). Filename format: `{show name}_{episode name}.json`. 
 
 Each word in the transcript is annotated as a dictionary:
@@ -108,7 +108,7 @@ Each word in the transcript is annotated as a dictionary:
 ```
 where “confidence” indicates the STT confidence in the prediction, “duration” (unit:microsecond or 1e-6 second) is the duration of the transcribed word, “offset” (unit:microsecond or 1e-6 second) is the start time of the transcribed word in the full-length recording.
 
-#### 2. PodcastFillers.csv
+##### 2. PodcastFillers.csv
 This is the dataset’s main annotation file, and contains the annotations of all 85,803 manually annotated events. Each annotated event also corresponds to one pre-processed audio clip. For each annotated event / audio clip, we provide:
 
 - **clip_name** (str): The filename of the audio clip containing this event: `{pfID}.wav`
@@ -143,15 +143,15 @@ This is the dataset’s main annotation file, and contains the annotations of al
 
 - **agreement** (int): Agreement among crowd annotators. It indicates the number of annotators.
 
-#### 3. Per-episode csv files
+##### 3. Per-episode csv files
 
 These files have the exact same format as PodcastFillers.csv, but only contain the audio events for a specific podcast episode. There’s one file per episode. Filename format:  `{show name}_{episode name}.csv` 
 
-#### 4. VAD activation csv files
+##### 4. VAD activation csv files
 
 Voice activity detection predictions using our pretained robust VAD model, the first column indicates time stamps (unit:second) and the second one indicates activations. Filename format:  `{show name}_{episode name}.csv`
 
-#### 5. Ground truth and prediction sed_eval txt files
+##### 5. Ground truth and prediction sed_eval txt files
 
 Ground truth and AVC-FillerNet predicted events using [sed_eval](https://tut-arg.github.io/sed_eval/) supported format: 
 ```
