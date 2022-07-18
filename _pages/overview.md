@@ -36,11 +36,16 @@ In 23rd Annual Cong. of the Int. Speech Communication Association (INTERSPEECH),
 
 ## Download
 
-PodcastFillers dataset is hosted at Zenodo, to unzip the split compressed files, please use the following command line:
+PodcastFillers dataset is hosted at Zenodo. 
+
+To unzip the split compressed files, for Mac/Linux users: please use the following command line:
 ```
 zip -FF PodcastFillers.zip --out PodcastFillers-full.zip
 unzip PodcastFillers-full.zip
 ```
+
+For Windows users, simply unzip `PodcastFillers.zip` with WinRAR.
+
 
 **The download link is available at**: [zenodo](https://zenodo.org/record/6609215#.Ys3IwZPMK3I)
 
